@@ -12,4 +12,10 @@
     <string name="btnlogin">"Login"</string>
     <string name="Switch">What does this do?</string>
     <string name="Image"></string>
+    <string name="login_key">Login</string>
+    <string name="Ok">OK</string>
+
+
+
+
 </resources>
