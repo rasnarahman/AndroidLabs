@@ -1,7 +1,6 @@
 package com.example.rasna.androidlabs;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.content.Intent;
@@ -10,7 +9,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toolbar;
+
 
 public class LoginActivity extends Activity {
     final String ACTIVITY_NAME = "StartActivity";

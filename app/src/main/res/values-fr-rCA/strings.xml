@@ -12,4 +12,5 @@
     <string name="CheckBox">case à cocher</string>
     <string name="Switch">Qu\'est-ce que cela fait?</string>
     <string name="io_menu_camera">caméra</string>
+    <string name="button4">Démarrer la discussion</string>
 </resources>

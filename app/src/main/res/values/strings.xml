@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">AndroidLabs</string>
     <string name="hello_message">Hello World!</string>
     <string name="ButtonText">I\'m a button</string>
@@ -14,8 +15,8 @@
     <string name="Image"></string>
     <string name="login_key">Login</string>
     <string name="Ok">OK</string>
-
-
+    <string name="button4">Start Chat</string>
+    <string name="btnsend">SEND</string>
 
 
 </resources>

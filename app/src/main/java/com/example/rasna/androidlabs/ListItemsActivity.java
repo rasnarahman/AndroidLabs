@@ -23,13 +23,12 @@ public class ListItemsActivity extends Activity {
     boolean isChecked = false;
     CheckBox cBox;
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.i(ACTIVITY_NAME, "In onCreate()");
         setContentView(R.layout.activity_list_items);
 
-        imageBt = (ImageButton) findViewById(R.id.Image);
+        imageBt =  findViewById(R.id.Image);
         imageBt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,7 +40,7 @@ public class ListItemsActivity extends Activity {
         });
 
 
-        swt = (Switch) findViewById(R.id.Switch);
+        swt = findViewById(R.id.Switch);
 
         swt.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -66,15 +65,15 @@ public class ListItemsActivity extends Activity {
 
 
         final AlertDialog.Builder builder = new AlertDialog.Builder(ListItemsActivity.this);
-        cBox = (CheckBox) findViewById(R.id.Checkbox);
+        cBox = findViewById(R.id.Checkbox);
         cBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
+
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     builder.setMessage("Do you want to finish the activity?");
                     builder.setTitle("CheckBox");
                     builder.setPositiveButton(R.string.Ok, new DialogInterface.OnClickListener() {
-                        @Override
+
                         public void onClick(DialogInterface dialog, int id) {
                             Intent intent2 = new Intent();
                             intent2.putExtra("Response", "Here is my response");
@@ -84,7 +83,7 @@ public class ListItemsActivity extends Activity {
                     });
 
                     builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                        @Override
+
                         public void onClick(DialogInterface dialog, int id) {
 
                         }
@@ -106,7 +105,7 @@ public class ListItemsActivity extends Activity {
         Log.i(ACTIVITY_NAME, "In onResume()");
     }
 
-    @Override
+
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK){
             Bundle extras = data.getExtras();
@@ -116,22 +115,20 @@ public class ListItemsActivity extends Activity {
         }
     }
 
-
-    @Override
     protected void onPause()
     {
         super.onPause();
         Log.i(ACTIVITY_NAME,"In onPause");
 
     }
-    @Override
+
     protected void onStop()
     {
         super.onStop();
         Log.i(ACTIVITY_NAME,"In onStop");
 
     }
-    @Override
+
     protected void onDestroy()
     {
         super.onDestroy();
